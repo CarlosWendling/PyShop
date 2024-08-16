@@ -19,5 +19,5 @@ from django.urls import path, include
 urlpatterns = [
     path('admin/', admin.site.urls),
     # to forward the user to the products app
-    path('products/', include('products.urls'))
+    path('products/', include('products.urls')),
 ]
