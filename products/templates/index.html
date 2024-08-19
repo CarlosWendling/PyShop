@@ -1,11 +1,6 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Products</title>
-</head>
-<body>
+{% extends 'base.html' %}
+
+{% block content %}
     <h1>Products</h1>
     <ul>
         <!-- Show the data from the database (product and it's price) -->
@@ -13,5 +8,4 @@
             <li>{{ product.name }} (${{ product.price }})</li>
         {% endfor %}
     </ul>
-</body>
-</html>
+{% endblock %}
