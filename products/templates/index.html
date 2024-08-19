@@ -8,9 +8,10 @@
 <body>
     <h1>Products</h1>
     <ul>
-        <li>Item 1</li>
-        <li>Item 1</li>
-        <li>Item 1</li>
+        <!-- Show the data from the database (product and it's price) -->
+        {% for product in products %}
+            <li>{{ product.name }} (${{ product.price }})</li>
+        {% endfor %}
     </ul>
 </body>
 </html>
